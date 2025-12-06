@@ -12,17 +12,38 @@ INTRO = (
 )
 
 Twee = (
-    "Zoals altijd, het is zo al een tijdje,"
-    "Is Bé weer een bezig bijtje." 
-    "Sinds een maandje is er ook een nieuwe gebeurtenis,"
-    "Beatrix werkt sinds kort bij Kentalis. "
-    "Kinderen helpen met beeldende therapie wil ze graag,"
-    "Maar met de computer gaat alles veel te traag. "
-    "De Sint snapt dit wel, ook hij vind het onaangenaam,"
-    "Maar gelukkig zijn zijn pieten vaak erg behulpzaam."
-    "Goed, hij zal er niet mee pochen,"
-    "En hoopt dat Bé snel in kan loggen."
+    "Zoals altijd, het is zo al een tijdje,\n\n"
+    "Is Bé weer een bezig bijtje.\n\n" 
+    "Sinds een maandje is er ook een nieuwe gebeurtenis,\n\n"
+    "Beatrix werkt sinds kort bij Kentalis. \n\n"
+    "Kinderen helpen met beeldende therapie wil ze graag,\n\n"
+    "Maar met de computer gaat alles veel te traag.\n\n "
+    "De Sint snapt dit wel, ook hij vind het onaangenaam,\n\n"
+    "Maar gelukkig zijn zijn pieten vaak erg behulpzaam.\n\n"
+    "Goed, hij zal er niet mee pochen,\n\n"
+    "En hoopt dat Bé snel in kan loggen.\n\n"
 )
+
+Drie = ("Om te ontspannen hoeft Bé gelukkig niet op reis, \n\n"
+"Want thuis is het al een heus vogelparadijs\n\n"
+"Waterhoen hier, ijsvogel daar,\n\n"
+"De age-appropriate hobby kan het hele jaar.\n\n"
+"Een vijver zo prachtig, amper te beschrijven \n\n"
+"Leuk dat water – maar in de tuin mag het blijven. \n\n"
+"Liever niet in huis – want wat is dat voor plek? \n\n"
+"Dan maar een zeil, dat is beter dan een lek. \n \n \n"
+        "(spot de vogel)"
+)
+
+Vier = ("Je bent vaak op zoek naar je telefoon \n\n"
+"Sint (toch al wat ouder) herkent dat patroon \n\n"
+"Maar met deze surprise neem je afscheid \n\n"
+"Van al dat zoeken altijd \n\n"
+"Met de supercomputer van Sint vond ChatGTPiet een oplossing, \n\n"
+"Waarmee je met 99% zekerheid niet meer hoeft te zoeken naar dat ding. \n\n"
+"ChatGTPiet deed echt zijn best, \n\n"
+"Dus klik door voor de test"
+
 
 QUESTION_1 = "Waar heb je je telefoon voor het laatst gezien?"
 QUESTION_2 = "Heb je al de badkamer gecheckt?"
@@ -48,6 +69,19 @@ if st.session_state.state == "intro":
 if st.session_state.state == "Twee":
     st.markdown(f"**Sint:** {Twee}")
     if st.button("Klik om in te loggen"):
+        st.session_state.state = "Drie"
+        st.rerun()
+
+# Drie
+if st.session_state.state == "Drie":
+    st.markdown(f"**Sint:** {Drie}")
+    if st.button("🦤"):
+        st.session_state.state = "Vier"
+        st.rerun()
+# Vier
+if st.session_state.state == "Vier":
+    st.markdown(f"**Sint:** {Vier}")
+    if st.button("TELEFOONZOEKER"):
         st.session_state.state = "q1"
         st.rerun()
 
