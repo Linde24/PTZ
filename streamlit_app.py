@@ -1,10 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="Sint Chatbot")
+st.set_page_config(page_title="ChatGTPiet")
 
 # Questions & Messages
 INTRO = (
-    "Lieve Beatrix, mijn pieten hebben heel hard gewerkt en na honderden uren "
+    "Lieve Beatrix,"
+    "mijn pieten hebben heel hard gewerkt en na honderden uren "
     "analyse door supercomputers is het ze gelukt om een programma te maken dat "
     "altijd weet waar je telefoon ligt."
 )
@@ -19,12 +20,12 @@ if "state" not in st.session_state:
 if "answers" not in st.session_state:
     st.session_state.answers = {}
 
-st.title("🎁 Chat met Sint")
+st.title("🎁 ChatGTPiet")
 
 
 # INTRO ---------------------------------------------------------------------------------------
 if st.session_state.state == "intro":
-    st.markdown(f"**Sint:** {INTRO}")
+    st.markdown(f"**ChatGTPiet:** {INTRO}")
     if st.button("Verder"):
         st.session_state.state = "q1"
         st.rerun()
@@ -32,7 +33,7 @@ if st.session_state.state == "intro":
 
 # QUESTION 1 ----------------------------------------------------------------------------------
 elif st.session_state.state == "q1":
-    st.markdown(f"**Sint:** {QUESTION_1}")
+    st.markdown(f"**ChatGTPiet:** {QUESTION_1}")
     answer = st.text_input("Jouw antwoord:")
 
     if answer:
@@ -43,7 +44,7 @@ elif st.session_state.state == "q1":
 
 # QUESTION 2 ----------------------------------------------------------------------------------
 elif st.session_state.state == "q2":
-    st.markdown(f"**Sint:** {QUESTION_2}")
+    st.markdown(f"**ChatGTPiet** {QUESTION_2}")
     col1, col2 = st.columns(2)
 
     with col1:
@@ -61,7 +62,7 @@ elif st.session_state.state == "q2":
 
 # QUESTION 3 ----------------------------------------------------------------------------------
 elif st.session_state.state == "q3":
-    st.markdown(f"**Sint:** {QUESTION_3}")
+    st.markdown(f"**ChatGTPiet:** {QUESTION_3}")
     col1, col2 = st.columns(2)
 
     with col1:
@@ -85,3 +86,4 @@ elif st.session_state.state == "error":
         "Waarschijnlijk leeft hij nu zijn beste leven in een parallel universum."
     )
     st.stop()
+
