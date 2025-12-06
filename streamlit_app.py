@@ -138,7 +138,7 @@ elif st.session_state.state == "q3":
 elif st.session_state.state == "error":
     st.error(
         "🤯 **AI-foutmelding 404: Telefoon Niet Gevonden**\n\n"
-        "ChatGTPiet weet het ook niet meer. Deze situatie is niet voorzien \n"
+        "ChatGTPiet weet het ook niet meer. Deze situatie is niet voorzien \n\n"
         "Waarschijnlijk leeft je telefoon nu zijn beste leven in een parallel universum."
     )
     st.stop()
