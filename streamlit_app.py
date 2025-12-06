@@ -45,8 +45,7 @@ Vier = "Je bent  vast benieuwd naar je surprise \n\n "
 "En de computer heeft jouw patronen geleerd. \n\n"
 "In theorie heeft de Telefoonzoeker *bijna* altijd gelijk, \n\n "
 "Maar wellicht moeten we dat nog testen in de praktijk."
-
-       )
+)
 
 QUESTION_1 = "Waar heb je je telefoon voor het laatst gezien?"
 QUESTION_2 = "Heb je al de badkamer gecheckt?"
