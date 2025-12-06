@@ -22,6 +22,7 @@ Twee = (
     "Maar gelukkig zijn zijn pieten vaak erg behulpzaam."
     "Goed, hij zal er niet mee pochen,"
     "En hoopt dat Bé snel in kan loggen."
+)
 
 QUESTION_1 = "Waar heb je je telefoon voor het laatst gezien?"
 QUESTION_2 = "Heb je al de badkamer gecheckt?"
