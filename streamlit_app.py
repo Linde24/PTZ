@@ -105,15 +105,15 @@ elif st.session_state.state == "q2":
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("Ja ✔️"):
+        if st.button("Ja, daar ligt hij niet"):
             st.session_state.answers["q2"] = "yes"
             st.session_state.state = "q3"
             st.rerun()
 
     with col2:
-        if st.button("Nee ❌"):
+        if st.button("Nee "):
             st.session_state.answers["q2"] = "no"
-            st.info("Check de badkamer!")
+            st.info("Check de badkamer! Als hij daar niet ligt, klik dan op de andere knop.")
             # Stay on the same question — user can click again
 
 
@@ -123,15 +123,15 @@ elif st.session_state.state == "q3":
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("Ja ✔️"):
+        if st.button("Ja, daar ligt hij niet"):
             st.session_state.answers["q3"] = "yes"
             st.session_state.state = "error"
             st.rerun()
 
     with col2:
-        if st.button("Nee ❌"):
+        if st.button("Nee"):
             st.session_state.answers["q3"] = "no"
-            st.warning("Check de WC beneden!")
+            st.warning("Check de WC beneden! Als hij daar niet ligt, klik dan op de andere knop.")
             # Stay on the same question
 
 
@@ -139,7 +139,7 @@ elif st.session_state.state == "q3":
 elif st.session_state.state == "error":
     st.error(
         "🤯 **AI-foutmelding 404: Telefoon Niet Gevonden**\n\n"
-        "ChatGTPiet weet het ook niet meer. \n"
+        "ChatGTPiet weet het ook niet meer. Deze situatie is niet voorzien \n"
         "Waarschijnlijk leeft je telefoon nu zijn beste leven in een parallel universum."
     )
     st.stop()
