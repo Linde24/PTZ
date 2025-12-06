@@ -43,7 +43,7 @@ Vier = ("Je bent vaak op zoek naar je telefoon \n\n"
 "Waarmee je met 99% zekerheid niet meer hoeft te zoeken naar dat ding. \n\n"
 "ChatGTPiet deed echt zijn best, \n\n"
 "Dus klik door voor de test"
-
+       )
 
 QUESTION_1 = "Waar heb je je telefoon voor het laatst gezien?"
 QUESTION_2 = "Heb je al de badkamer gecheckt?"
