@@ -4,10 +4,10 @@ st.set_page_config(page_title="ChatGTPiet")
 
 # Questions & Messages
 INTRO = (
-    "Lieve Beatrix,"
-    "Het was een grapje - allicht,"
-    "Want voor AI is Sint nog niet gezwicht"
-    "Een nieuw hulpje heeft hij wel,"
+    "Lieve Beatrix, \n"
+    "Het was een grapje - allicht,\n"
+    "Want voor AI is Sint nog niet gezwicht\n"
+    "Een nieuw hulpje heeft hij wel,\n"
     "Met computers is ChatGTPiet supersnel."
 )
 
