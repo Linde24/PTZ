@@ -5,10 +5,23 @@ st.set_page_config(page_title="ChatGTPiet")
 # Questions & Messages
 INTRO = (
     "Lieve Beatrix,"
-    "mijn pieten hebben heel hard gewerkt en na honderden uren "
-    "analyse door supercomputers is het ze gelukt om een programma te maken dat "
-    "altijd weet waar je telefoon ligt."
+    "Het was een grapje - allicht,"
+    "Want voor AI is Sint nog niet gezwicht"
+    "Een nieuw hulpje heeft hij wel,"
+    "Met computers is ChatGTPiet supersnel."
 )
+
+Twee = (
+    "Zoals altijd, het is zo al een tijdje,"
+    "Is Bé weer een bezig bijtje." 
+    "Sinds een maandje is er ook een nieuwe gebeurtenis,"
+    "Beatrix werkt sinds kort bij Kentalis. "
+    "Kinderen helpen met beeldende therapie wil ze graag,"
+    "Maar met de computer gaat alles veel te traag. "
+    "De Sint snapt dit wel, ook hij vind het onaangenaam,"
+    "Maar gelukkig zijn zijn pieten vaak erg behulpzaam."
+    "Goed, hij zal er niet mee pochen,"
+    "En hoopt dat Bé snel in kan loggen."
 
 QUESTION_1 = "Waar heb je je telefoon voor het laatst gezien?"
 QUESTION_2 = "Heb je al de badkamer gecheckt?"
@@ -25,11 +38,17 @@ st.title("🎁 ChatGTPiet")
 
 # INTRO ---------------------------------------------------------------------------------------
 if st.session_state.state == "intro":
-    st.markdown(f"**ChatGTPiet:** {INTRO}")
+    st.markdown(f"**Sint:** {INTRO}")
     if st.button("Verder"):
-        st.session_state.state = "q1"
+        st.session_state.state = "Twee"
         st.rerun()
 
+# Twee
+if st.session_state.state == "Twee":
+    st.markdown(f"**Sint:** {Twee}")
+    if st.button("Klik om in te loggen"):
+        st.session_state.state = "q1"
+        st.rerun()
 
 # QUESTION 1 ----------------------------------------------------------------------------------
 elif st.session_state.state == "q1":
