@@ -35,14 +35,17 @@ Drie = ("Om te ontspannen hoeft Bé gelukkig niet op reis, \n\n"
         "(spot de vogel)"
 )
 
-Vier = ("Je bent vaak op zoek naar je telefoon \n\n"
-"Sint (toch al wat ouder) herkent dat patroon \n\n"
-"Maar met deze surprise neem je afscheid \n\n"
-"Van al dat zoeken altijd \n\n"
-"Met de supercomputer van Sint vond ChatGTPiet een oplossing, \n\n"
-"Waarmee je met 99% zekerheid niet meer hoeft te zoeken naar dat ding. \n\n"
-"ChatGTPiet deed echt zijn best, \n\n"
-"Dus klik door voor de test"
+Vier = "Je bent  vast benieuwd naar je surprise \n\n "
+"Daarvoor heeft Sint ChatGTPiet gevraagd naar zijn expertise. \n\n "
+"Dit jaar geen knutselwerk, nee, hij wilde iets nuttigs maken \n\n "
+"En wat is nou fijn voor iemand die gewoon is vaak haar telefoon kwijt te raken? \n\n "
+"Juist, een AI telefoonzoeker is wellicht een goede life-hack, \n\n "
+"Die je helpt met zoeken op de juiste plek.  \n\n "
+"ChatGTPiet heeft daarvoor alle data geanalyseerd,  \n\n "
+"En de computer heeft jouw patronen geleerd. \n\n"
+"In theorie heeft de Telefoonzoeker *bijna* altijd gelijk, \n\n "
+"Maar wellicht moeten we dat nog testen in de praktijk."
+
        )
 
 QUESTION_1 = "Waar heb je je telefoon voor het laatst gezien?"
@@ -61,7 +64,7 @@ st.title("🎁 ChatGTPiet")
 # INTRO ---------------------------------------------------------------------------------------
 if st.session_state.state == "intro":
     st.markdown(f"**Sint:** {INTRO}")
-    if st.button("Verder"):
+    if st.button("Gedicht"):
         st.session_state.state = "Twee"
         st.rerun()
 
@@ -136,8 +139,8 @@ elif st.session_state.state == "q3":
 elif st.session_state.state == "error":
     st.error(
         "🤯 **AI-foutmelding 404: Telefoon Niet Gevonden**\n\n"
-        "Sint concludeert dat je telefoon officieel *vermist* is.\n"
-        "Waarschijnlijk leeft hij nu zijn beste leven in een parallel universum."
+        "ChatGTPiet weet het ook niet meer. \n"
+        "Waarschijnlijk leeft je telefoon nu zijn beste leven in een parallel universum."
     )
     st.stop()
 
