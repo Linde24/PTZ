@@ -35,7 +35,7 @@ Drie = ("Om te ontspannen hoeft Bé gelukkig niet op reis, \n\n"
         "(spot de vogel)"
 )
 
-Vier = "Je bent  vast benieuwd naar je surprise \n\n "
+Vier = ("Je bent  vast benieuwd naar je surprise \n\n "
 "Daarvoor heeft Sint ChatGTPiet gevraagd naar zijn expertise. \n\n "
 "Dit jaar geen knutselwerk, nee, hij wilde iets nuttigs maken \n\n "
 "En wat is nou fijn voor iemand die gewoon is vaak haar telefoon kwijt te raken? \n\n "
